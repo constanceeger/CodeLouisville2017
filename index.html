@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Michael's Most Delicious Eggs</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- link for css -->
+    <link rel="stylesheet" href="css/custom.css">
+
+  </head>
+  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
+    <div class="wrap">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <!-- nav container -->
+        <div class=container>
+          <a class="navbar-brand order-1 mr-0" href="https://www.codelouisville.org/" target="_blank">codeLouisville</a>
+          <button class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-item nav-link" href="#about">About</a>
+              <a class="nav-item nav-link" href="#gallery">Gallery</a>
+              <a class="nav-item nav-link" href="#ordernav">Order</a>
+            </div>
+          </div>
+        </div><!-- /nav contaianer -->
+      </nav><!-- /navbar -->
+
+      <!-- jumbotron -->
+      <div class="jumbotron jumbotron-fluid bg-success text-white">
+        <div class="container text-sm-center pt-3">
+          <img class='mb-4 img-fluid rounded d-none d-sm-block'>
+          <h1 class="display-4">Michael's Most Amazing Eggs</h1>
+          <p class="lead">Yummy Eggs From Happy Hens!</p>
+          
+            <button type="button" class="btn btn-outline-secondary btn-lg d-block mx-auto my-2" data-toggle="modal" data-target="#orderForm">Order Michael's Amazing Eggs</button>
+        </div>
+      </div>
+      <!-- /.jumbotron -->
+
+      <!-- container -->
+      <div class="container pt-4">
+        <!-- about the farm -->
+        <div id="about" class="row">
+          <div class="col-md-6 order-md-2">
+          <h3 class='mb-4 text-muted'>About the Farm</h3>
+          <img class='mb-4 img-fluid rounded d-none d-sm-block' src='https://picsum.photos/400/200?image=109'>
+          <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+          </div>
+          <div class="col-md order-md-1">
+            <h3 class='mb-4 text-muted'>About the Chickens</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+          </div>
+          <div class="col-md order-md-3">
+            <h3 class='mb-4 text-muted'>About the Eggs</h3>
+            <p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+          </div>
+        </div><!-- /about the farm -->
+
+          <!-- hens -->
+        <hr>
+        <h2 id="gallery" class="display-3 text-center my-5 text-muted">Meet the Happy Hens</h2>
+
+        <div id="hens" class="row">
+          <div class="col-sm-6 col-md-4 col-xl-3">
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="img/flock6.jpg" alt="Flock1">
+              <div class="card-img-overlay">
+                <p class="card-text">photo credit here</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-xl-3">
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="img/flock8.jpg" alt="Flock2">
+              <div class="card-img-overlay">
+                <p class="card-text">photo credit here</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-xl-3">
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="img/jordan-whitt-342861.jpg" alt="Flock3">
+              <div class="card-img-overlay">
+                <p class="card-text">photo credit here</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-xl-3">
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="img/jordan-whitt-342862.jpg" alt="Flock4">
+              <div class="card-img-overlay">
+                <p class="card-text">photo credit here</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-xl-3">
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="img/flock1.jpg" alt="Flock5">
+              <div class="card-img-overlay">
+                <p class="card-text">photo credit here</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-xl-3">
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="img/flock2.jpg" alt="Flock6">
+              <div class="card-img-overlay">
+                <p class="card-text">photo credit here</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-xl-3">
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="img/flock5.jpg" alt="Flock2">
+              <div class="card-img-overlay">
+                <p class="card-text">photo credit here</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-xl-3">
+            <div class="card bg-dark text-white">
+              <img class="card-img" src="img/flock3.jpg" alt="Flock2">
+              <div class="card-img-overlay">
+                <p class="card-text">photo credit here</p>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.hens -->
+
+        <!-- order button -->
+        <hr>
+        <div id="ordernav">
+          <button type="button" class="btn btn-outline-secondary btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#orderForm">Order Michael's Amazing Eggs</button>
+
+          
+          <div class="row py-4 text-muted">
+            <div class="col-md col-xl-5">
+              <p><strong>About Egg Processing</strong></p>
+              <p>Michael's Eggs have been processed according to standards outlined in ...</p>
+            </div>
+            <div class='col-md col-xl-5 ml-auto'>
+              <p><strong>Subscribe to our eNewsletter</strong></p>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email">
+                <span class="input-group-btn">
+                  <button class="btn btn-secondary" type="button">Subscribe</button>
+                </span>
+              </div>
+            </div>
+          </div><!-- /.processing and email -->
+        </div><!-- /.order button -->
+        </hr>
+
+            <!-- FORM MODAL -->
+
+            <!-- Modal -->
+          <div class="modal fade" id="orderForm" tabindex="-1" role="dialog" aria-labelledby="orderForm" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="orderForm">Order Amazing Eggs</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label class="col-form-label" for="name">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Name">
+                    </div>
+                    <div class="form-group">
+                      <label class="col-form-label" for="email">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                      <label for="eggs">How many eggs would you like?</label>
+                      <select class="form-control" id="eggs">
+                        <option value="oneDozen">one dozen</option>
+                        <option value="twoDozen">two dozen</option>
+                        <option value="halfDozen">1/2 dozen</option>
+                      </select>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      </div><!-- /.wrap container for sticky footer -->
+
+    <!-- footer -->
+    <hr>
+    <footer>
+      <p>&copy; 2017 Constance Eger</p>
+    </footer>
+    <!-- /.footer -->
+    
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  </body>
+</html>

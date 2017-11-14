@@ -1,0 +1,21 @@
+
+/*--- adding gradient, transparency and image to header ---*/
+.jumbotron {
+	background-image: radial-gradient(at bottom right, lightyellow, transparent 90%),
+	url('../img/egg5.jpg');
+	background-size: cover;
+}
+/*--- .adding gradient, transparency and image to header ---*/
+
+
+/*--- sticky footer ---*/
+
+.card-text {
+	font-style: italic;
+	font-size: 10px;
+	text-align: right;
+}
+
+
+
+/*---  /.sticky footer ---*/
