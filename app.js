@@ -1,6 +1,13 @@
 
 
-/////*****function validateForm() {var x = document.forms["myForm"]["fname"].value;if (x == "") {alert("Name must be filled out");return false; }}****/////
+/*--- form sumbit ---*/ 
+function validateForm() {
+		var x = document.forms["myForm"]["fname"].value;
+		if (x == "") {alert("Name must be filled out");
+		return false;
+	}
+}
+
 
 
 var $overlay = $('<div id="overlay"></div>');

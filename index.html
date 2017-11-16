@@ -184,11 +184,39 @@
                   <!-- new Javascript button 
                   <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">Name: <input type="text" name="fname"><input type="submit" value="Submit"></form> /.new Javascript button-->
 
+          <form id=orderForm action="/action_page.php" method="post" onsubmit="return validateForm()">
+            <h5>Michael's Amazing Eggs</h5>
+            
+            <fieldset>
+            <legend>Your Information</legend>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="customer_name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            </fieldset>
 
+            <fieldset>
+            <legend>Your Order</legend>
+            <label>How many amazing eggs would you like?</label>
+            <input type="radio" id="two dozen" value="24" name="number_ordered">
+            <label for="two dozen" class="light">Two Dozen</label>
+            <br>
+            <input type="radio" id="one dozen" value="12" name="number_ordered">
+            <label for="one dozen" class="light">One Dozen</label>
+            <br>
+            <input type="radio" id="half dozen" value="6" name="number_ordered">
+            <label for="half dozen" class="light">Half Dozen</label>
+            <br>
+            <label for="date">When would like your amazing eggs delivered?</label>
+            <input type="date" id="pickupDate" name="pickup_Date">
+            </fieldset>
+            
+            <button type="submit">Order Eggs</button>
+          </form>
 
-            <!-- FORM MODAL -->
+            <!-- FORM M>ODAL -->
 
-            <!-- Modal -->
+          <!-- Disable Modal 
           <div class="modal fade" id="orderForm" tabindex="-1" role="dialog" aria-labelledby="orderForm" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -224,7 +252,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> disable Modal-->
 
 
 
