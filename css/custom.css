@@ -1,20 +1,89 @@
 
 /*--- adding gradient, transparency and image to header ---*/
 .jumbotron {
-	background-image: radial-gradient(at bottom right, #f7f984, transparent 80%),
+	background-image: radial-gradient(at bottom right, #ffffcc, transparent 80%),
 	url('../img/egg5.jpg');
 	background-size: cover;
 }
 /*--- .adding gradient, transparency and image to header ---*/
 
 
-/*--- sticky footer ---*/
+/*---  footer ---*/
 
+
+/*--- card overlay text ---*/
 .card-text {
 	font-style: italic;
 	font-size: 10px;
 	text-align: right;
 }
+/*--- card overlay text ---*/
+
+
+
+/*---  jQueary lightbox ---*/
+ul {
+	list-style:none;
+	margin: 0 auto;
+	padding: 0;
+	display: block;
+	max-width: 780px;
+	text-align: center;
+}
+ul li {
+	display: inline-block;
+	padding: 8px;
+	background:white;
+	margin:10px;
+}
+ul li img {
+	display: block;
+}
+a {
+	text-decoration: none;
+}
+
+
+#overlay {
+	background: rgba(0,0,0,0.7);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	display: none;
+	text-align: center;
+}
+
+#overlay img {
+	margin-top: 10%;
+}
+
+#overlay p {
+	color:white;
+}
+
+/*--- /.JQuery lightbox ---*/
+
+
+
+/*--- Bootstrap lightbox features ---*/
+.card {
+	height: 10em;
+}
+
+.card:hover {
+	transform: scale(1.5);
+}
+
+.card-text:hover {
+	transform: scale(1.5);
+	color: black;
+	text-align: center;
+}
+/*--- /.Bootstrap lightbox features ---*/
+
+
 
 footer {
   width: 100%;
@@ -38,6 +107,8 @@ footer ul li {
   display: inline-block;
 }
 
+/*--- hide social icons 
+
 a.social {
   display: inline-block;
   text-indent: -9999px;
@@ -59,21 +130,9 @@ a.github {
 }
 a.social:hover {
   opacity: 1;
-}
-/*---  /.sticky footer ---*/
+} ---*/
+
+/*---  /. footer ---*/
 
 
-.card {
-	height: 10em;
-}
 
-.card:hover {
-	transform: scale(1.5);
-}
-
-.card-text:hover {
-	transform: scale(1.5);
-	color: black;
-	text-align: center;
-	text-shadow: white 3em;
-}

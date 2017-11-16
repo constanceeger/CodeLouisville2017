@@ -12,12 +12,14 @@
 
     <!-- link for css -->
     <link rel="stylesheet" href="css/custom.css">
-    <script src="javascript.js"></script>
+
+
 
   </head>
-  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
+  <body>
       <!-- navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top"  id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
         <!-- nav container -->
         <div class=container>
           <a class="navbar-brand order-1 mr-0" href="https://www.codelouisville.org/" target="_blank">codeLouisville</a>
@@ -76,6 +78,18 @@
         <hr>
         <h2 id="gallery" class="henHeading display-3 text-center my-5 text-muted">Meet the Happy Hens</h2>
 
+          <ul id="imageGallery">
+            <li><a href="img/flock1.jpg"><img src="img/flock1.jpg" width="200" alt="flock1"></a></li>
+            <li><a href="img/flock2.jpg"><img src="img/flock2.jpg" width="200" alt="flock2"></a></li>
+            <li><a href="img/flock3.jpg"><img src="img/flock3.jpg" width="200" alt="flock3"></a></li>
+            <li><a href="img/flock5.jpg"><img src="img/flock5.jpg" width="200" alt="flock5"></a></li>
+            <li><a href="img/flock6.jpg"><img src="img/flock6.jpg" width="200" alt="flock6"></a></li>
+            <li><a href="img/flock8.jpg"><img src="img/flock8.jpg" width="200" alt="flock8"></a></li>
+            <li><a href="img/jordan-whitt-342861.jpg"><img src="img/jordan-whitt-342861.jpg" width="200" alt="jordan-whitt-342861"></a></li>
+            <li><a href="img/jordan-whitt-342862.jpg"><img src="img/jordan-whitt-342862.jpg" width="200" alt="jordan-whitt-342862"></a></li>
+          </ul>
+
+        <!-- suspend bootstrap gallery
         <div id="hens" class="row">
           <div class="col-xsm-6 col-md-4 col-xl-3">
             <div class="card bg-dark text-white">
@@ -141,7 +155,7 @@
               </div>
             </div>
           </div>
-        </div><!-- /.hens -->
+        </div> --><!-- /.hens -->
 
         <!-- order button -->
         <hr>
@@ -213,32 +227,28 @@
           </div>
 
 
+
       <!-- footer -->
       <hr>
-    <footer>
-      <ul>
-        <li><a href="http://twitter.com/" target="_blank" class="social twitter">Twitter</a></li>
-        <li><a href="#" class="social linkedin">LinkedIn</a></li>
-        <li><a href="#" class="social github">Github</a></li>
-      </ul>
-      <p class="copyright">&copy; Constance Eger</p>
-    </footer>
-
-      <!-- <footer>
-        <p>&copy; 2017 Constance Eger</p>
-      </footer> -->
-      <!-- /.footer -->
+      <footer>
+        <ul>
+          <li><a href="http://twitter.com/" target="_blank" class="social twitter">Twitter</a></li>
+          <li><a href="#" class="social linkedin">LinkedIn</a></li>
+          <li><a href="#" class="social github">Github</a></li>
+        </ul>
+        <p class="copyright">&copy; Constance Eger</p>
+      </footer>
+        <!-- /.footer -->
+    
     
 
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>    
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 
 
 
 
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-        
+
   </body>
 </html>
