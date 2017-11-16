@@ -79,14 +79,14 @@
         <h2 id="gallery" class="henHeading display-3 text-center my-5 text-muted">Meet the Happy Hens</h2>
 
           <ul id="imageGallery">
-            <li><a href="img/flock1.jpg"><img src="img/flock1.jpg" width="200" alt="flock1"></a></li>
-            <li><a href="img/flock2.jpg"><img src="img/flock2.jpg" width="200" alt="flock2"></a></li>
-            <li><a href="img/flock3.jpg"><img src="img/flock3.jpg" width="200" alt="flock3"></a></li>
-            <li><a href="img/flock5.jpg"><img src="img/flock5.jpg" width="200" alt="flock5"></a></li>
-            <li><a href="img/flock6.jpg"><img src="img/flock6.jpg" width="200" alt="flock6"></a></li>
-            <li><a href="img/flock8.jpg"><img src="img/flock8.jpg" width="200" alt="flock8"></a></li>
-            <li><a href="img/jordan-whitt-342861.jpg"><img src="img/jordan-whitt-342861.jpg" width="200" alt="jordan-whitt-342861"></a></li>
-            <li><a href="img/jordan-whitt-342862.jpg"><img src="img/jordan-whitt-342862.jpg" width="200" alt="jordan-whitt-342862"></a></li>
+            <li class="pic1"><a href="img/flock1.jpg"><img src="img/flock1.jpg" width="200" alt="flock1"></a></li>
+            <li class="pic2"><a href="img/flock2.jpg"><img src="img/flock2.jpg" width="200" alt="flock2"></a></li>
+            <li class="pic3"><a href="img/flock3.jpg"><img src="img/flock3.jpg" width="200" alt="flock3"></a></li>
+            <li class="pic4"><a href="img/flock5.jpg"><img src="img/flock5.jpg" width="200" alt="flock5"></a></li>
+            <li class="pic5"><a href="img/flock6.jpg"><img src="img/flock6.jpg" width="200" alt="flock6"></a></li>
+            <li class="pic6"><a href="img/flock8.jpg"><img src="img/flock8.jpg" width="200" alt="flock8"></a></li>
+            <li class="pic7"><a href="img/jordan-whitt-342861.jpg"><img src="img/jordan-whitt-342861.jpg" width="200" alt="jordan-whitt-342861"></a></li>
+            <li class="pic8"><a href="img/jordan-whitt-342862.jpg"><img src="img/jordan-whitt-342862.jpg" width="200" alt="jordan-whitt-342862"></a></li>
           </ul>
 
         <!-- suspend bootstrap gallery
@@ -162,7 +162,8 @@
         <div id="ordernav">
           <button type="button" class="btn btn-outline-secondary btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#orderForm">Order Michael's Amazing Eggs</button>
 
-          
+          <!-- *****DISABLE THIS AREA for later development of egg processing information and newsletter subscription button *******************
+
           <div class="row py-4 text-muted">
             <div class="col-md col-xl-5">
               <p><strong>About Egg Processing</strong></p>
@@ -177,22 +178,23 @@
                 </span>
               </div>
             </div>
-          </div><!-- /.processing and email -->
+          </div> ************************************-->
+
+
         </div><!-- /.order button -->
         </hr>
       </div>
-                  <!-- new Javascript button 
-                  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">Name: <input type="text" name="fname"><input type="submit" value="Submit"></form> /.new Javascript button-->
 
-          <form id=orderForm action="/action_page.php" method="post" onsubmit="return validateForm()">
+
+          <form id=orderForm action="#" method="post" name="orderForm" class="form_class">
             <h5>Michael's Amazing Eggs</h5>
             
             <fieldset>
             <legend>Your Information</legend>
             <label for="name">Name</label>
-            <input type="text" id="name" name="customer_name">
+            <input type="text" id="name" name="customer_name" placeholder="Name">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email">
+            <input type="email" id="email" name="email" placeholder="Valid Email">
             </fieldset>
 
             <fieldset>
@@ -211,12 +213,15 @@
             <input type="date" id="pickupDate" name="pickup_Date">
             </fieldset>
             
-            <button type="submit">Order Eggs</button>
+            <input type="button" name="submit_id" id="btn_id" value="Order Amazing Eggs" onclick="submit_by_id()"/>
+
+            <!-- <button type="submit">Order Eggs</button> -->
+
           </form>
 
             <!-- FORM M>ODAL -->
 
-          <!-- Disable Modal 
+
           <div class="modal fade" id="orderForm" tabindex="-1" role="dialog" aria-labelledby="orderForm" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -252,7 +257,7 @@
                 </div>
               </div>
             </div>
-          </div> disable Modal-->
+          </div>
 
 
 
@@ -269,8 +274,12 @@
         <!-- /.footer -->
     
     
+   <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
-    <script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
     <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 
 

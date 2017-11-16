@@ -8,9 +8,6 @@
 /*--- .adding gradient, transparency and image to header ---*/
 
 
-/*---  footer ---*/
-
-
 /*--- card overlay text ---*/
 .card-text {
 	font-style: italic;
@@ -65,23 +62,48 @@ a {
 
 /*--- /.JQuery lightbox ---*/
 
-
-
-/*--- Bootstrap lightbox features ---*/
-.card {
-	height: 10em;
+/*--- interactive image. still need to add photo credit*/
+.pic1:hover {
+	transform: scale(1.5);
 }
-
-.card:hover {
+.pic2:hover {
+	transform: scale(1.5);
+}
+.pic3:hover {
+	transform: scale(1.5);
+}
+.pic4:hover {
+	transform: scale(1.5);
+}
+.pic5:hover {
+	transform: scale(1.5);
+}
+.pic6:hover {
+	transform: scale(1.5);
+}
+.pic7:hover {
+	transform: scale(1.5);
+}
+.pic8:hover {
 	transform: scale(1.5);
 }
 
-.card-text:hover {
-	transform: scale(1.5);
-	color: black;
-	text-align: center;
-}
+/*--- DISABLE THIS AREA FOR LATER DEVELOPMENT lightbox features associated with chicken photo gallery. Bootstrap lightbox features ---*/
+	.card {
+		height: 10em;
+	}
+
+	.card:hover {
+		transform: scale(1.5);
+	}
+
+	.card-text:hover {
+		transform: scale(1.5);
+		color: black;
+		text-align: center;
+	}
 /*--- /.Bootstrap lightbox features ---*/
+
 
 
 
@@ -133,6 +155,10 @@ a.social:hover {
 } ---*/
 
 /*---  /. footer ---*/
+
+
+
+
 
 /*--- treehouse form css ---*/
 
@@ -246,3 +272,12 @@ label.light {
 }
 /*--- /.treehouse form css ---*/
 
+
+/*--- getForm ---*/
+#btn_id:hover,#btn_name:hover,#btn_class:hover,#btn_tag:hover{
+background: linear-gradient(#ffdd7f 5%, #ffffcc 100%);
+}
+#btn_name,#btn_tag{
+margin-left: 10px;
+}
+/*--- getForm ---*/

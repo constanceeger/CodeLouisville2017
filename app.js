@@ -1,14 +1,51 @@
 
 
-/*--- form sumbit ---*/ 
+/*--- form sumbit 
 function validateForm() {
 		var x = document.forms["myForm"]["fname"].value;
 		if (x == "") {alert("Name must be filled out");
 		return false;
 	}
+} ---*/
+
+// alert("I am an alert box!");
+
+
+
+/*--- submit order form alert ---*/ 
+
+
+// Submit form with id function.
+function submit_by_id() {
+	var name = document.getElementById("name").value;
+	var email = document.getElementById("email").value;
+
+ // Calling validation function
+if (validation()) {
+	document.getElementById("orderForm").submit();
+	alert(" Name : " + name + " \n Email : " + email + " \n Form Id : " + document.getElementById("orderForm").getAttribute("id") + "\n\n Thank you for your order. Michael's Amazing Eggs are on the way.");
+	}
+}
+
+// Name and Email validation Function.
+function validation(){
+	var name = document.getElementById("name").value;
+	var email = document.getElementById("email").value;
+	var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
+	if( name ==='' || email ===''){
+		alert("Make sure you completed your order form.");
+		return false;
+	}else if(!(email).match(emailReg)){
+		alert("Sorry, please check your email address.");
+		return false;
+	}
+	else{
+		return true;
+	}
 }
 
 
+/*--- /.submit order form alert ---*/ 
 
 var $overlay = $('<div id="overlay"></div>');
 var $image = $("<img>");
