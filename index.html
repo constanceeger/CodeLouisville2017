@@ -12,10 +12,10 @@
 
     <!-- link for css -->
     <link rel="stylesheet" href="css/custom.css">
+    <script src="javascript.js"></script>
 
   </head>
   <body id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
-    <div class="wrap">
       <!-- navbar -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <!-- nav container -->
@@ -48,7 +48,7 @@
           <h1 class="display-4">Michael's Most Amazing Eggs</h1>
           <p class="lead">Yummy Eggs From Happy Hens!</p>
           
-            <button type="button" class="btn btn-outline-secondary btn-lg d-block mx-auto my-2" data-toggle="modal" data-target="#orderForm">Order Michael's Amazing Eggs</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg d-block mx-auto my-2" data-toggle="modal" data-target="#orderForm">Order Michael's Amazing Eggs</button> 
         </div>
       </div>
       <!-- /.jumbotron -->
@@ -58,9 +58,9 @@
         <!-- about the farm -->
         <div id="about" class="row">
           <div class="col-md-6 order-md-2">
-          <h3 class='mb-4 text-muted'>About the Farm</h3>
-          <img class='mb-4 img-fluid rounded d-none d-sm-block' src='https://picsum.photos/400/200?image=109'>
-          <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+            <h3 class='mb-4 text-muted'>About the Farm</h3>
+            <img class='mb-4 img-fluid rounded d-none d-sm-block' src='https://picsum.photos/400/200?image=109'>
+            <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
           </div>
           <div class="col-md order-md-1">
             <h3 class='mb-4 text-muted'>About the Chickens</h3>
@@ -74,10 +74,10 @@
 
           <!-- hens -->
         <hr>
-        <h2 id="gallery" class="display-3 text-center my-5 text-muted">Meet the Happy Hens</h2>
+        <h2 id="gallery" class="henHeading display-3 text-center my-5 text-muted">Meet the Happy Hens</h2>
 
         <div id="hens" class="row">
-          <div class="col-sm-6 col-md-4 col-xl-3">
+          <div class="col-xsm-6 col-md-4 col-xl-3">
             <div class="card bg-dark text-white">
               <img class="card-img" src="img/flock6.jpg" alt="Flock1">
               <div class="card-img-overlay">
@@ -166,6 +166,11 @@
           </div><!-- /.processing and email -->
         </div><!-- /.order button -->
         </hr>
+      </div>
+                  <!-- new Javascript button 
+                  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">Name: <input type="text" name="fname"><input type="submit" value="Submit"></form> /.new Javascript button-->
+
+
 
             <!-- FORM MODAL -->
 
@@ -208,14 +213,21 @@
           </div>
 
 
-      </div><!-- /.wrap container for sticky footer -->
-
-    <!-- footer -->
-    <hr>
+      <!-- footer -->
+      <hr>
     <footer>
-      <p>&copy; 2017 Constance Eger</p>
+      <ul>
+        <li><a href="http://twitter.com/" target="_blank" class="social twitter">Twitter</a></li>
+        <li><a href="#" class="social linkedin">LinkedIn</a></li>
+        <li><a href="#" class="social github">Github</a></li>
+      </ul>
+      <p class="copyright">&copy; Constance Eger</p>
     </footer>
-    <!-- /.footer -->
+
+      <!-- <footer>
+        <p>&copy; 2017 Constance Eger</p>
+      </footer> -->
+      <!-- /.footer -->
     
 
 
@@ -223,9 +235,10 @@
 
 
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        
   </body>
 </html>

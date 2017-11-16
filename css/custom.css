@@ -1,7 +1,7 @@
 
 /*--- adding gradient, transparency and image to header ---*/
 .jumbotron {
-	background-image: radial-gradient(at bottom right, lightyellow, transparent 90%),
+	background-image: radial-gradient(at bottom right, #f7f984, transparent 80%),
 	url('../img/egg5.jpg');
 	background-size: cover;
 }
@@ -16,6 +16,64 @@
 	text-align: right;
 }
 
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 0 40px 20px;
+}
 
+footer .copyright {
+  top: -8px;
+  margin-right: 20px;
+  font-size: .75em;
+}
 
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .5;
+  transition: all .25s;
+}
+a.twitter {
+  background-image: url('../img/twitter.svg');
+}
+a.linkedin {
+  background-image: url('../img/linkedin.svg');
+}
+a.github {
+  background-image: url('../img/github.svg');
+}
+a.social:hover {
+  opacity: 1;
+}
 /*---  /.sticky footer ---*/
+
+
+.card {
+	height: 10em;
+}
+
+.card:hover {
+	transform: scale(1.5);
+}
+
+.card-text:hover {
+	transform: scale(1.5);
+	color: black;
+	text-align: center;
+	text-shadow: white 3em;
+}
