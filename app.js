@@ -16,7 +16,7 @@ function validateForm() {
 
 
 // Submit form with id function.
-function submit_by_id() {
+function (submit_by_id() {
 	var name = document.getElementById("name").value;
 	var email = document.getElementById("email").value;
 
