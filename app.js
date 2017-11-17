@@ -16,14 +16,14 @@ function validateForm() {
 
 
 // Submit form with id function.
-function (submit_by_id() {
+function submit_by_id() {
 	var name = document.getElementById("name").value;
 	var email = document.getElementById("email").value;
 
  // Calling validation function
-if (validation()) {
-	document.getElementById("orderForm").submit();
-	alert(" Name : " + name + " \n Email : " + email + " \n Form Id : " + document.getElementById("orderForm").getAttribute("id") + "\n\n Thank you for your order. Michael's Amazing Eggs are on the way.");
+	if (validation()) {
+	document.getElementById("form_id").submit();
+	alert(" Name : " + name + " \n Email : " + email + " \n Form Id : " + document.getElementById("form_id").getAttribute("id") + "\n\n Thank you for your order. Michael's Amazing Eggs are on the way.");
 	}
 }
 

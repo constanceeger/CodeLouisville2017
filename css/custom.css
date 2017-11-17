@@ -5,11 +5,12 @@
 	url('../img/egg5.jpg');
 	background-size: cover;
 }
+
+
+/******* DISCARD THIS CARD FOR FUTURE DEVELOPEMENT Bootstrap Card and jQuery Lightbox ***
 /*--- .adding gradient, transparency and image to header ---*/
-
-
 /*--- card overlay text ---*/
-.card-text {
+/*/*/*.card-text {
 	font-style: italic;
 	font-size: 10px;
 	text-align: right;
