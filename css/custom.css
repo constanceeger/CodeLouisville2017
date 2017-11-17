@@ -7,19 +7,20 @@
 }
 
 
-/******* DISCARD THIS CARD FOR FUTURE DEVELOPEMENT Bootstrap Card and jQuery Lightbox ***
+/*--- DISCARD THIS CARD FOR FUTURE DEVELOPEMENT Bootstrap Card and jQuery Lightbox ---*/
 /*--- .adding gradient, transparency and image to header ---*/
-/*--- card overlay text ---*/
-/*/*/*.card-text {
+/*--- card overlay text
+*.card-text {
 	font-style: italic;
 	font-size: 10px;
 	text-align: right;
 }
-/*--- card overlay text ---*/
+/*--- /.card overlay text ---*/
 
 
 
-/*---  jQueary lightbox ---*/
+/*jQueary lightbox */
+
 ul {
 	list-style:none;
 	margin: 0 auto;
@@ -63,34 +64,38 @@ a {
 
 /*--- /.JQuery lightbox ---*/
 
-/*--- interactive image. still need to add photo credit*/
+
+
+
+/*--- interactive images. still need to add photo credit*/
 .pic1:hover {
-	transform: scale(1.5);
+	transform: scale(1.75);
 }
 .pic2:hover {
-	transform: scale(1.5);
+	transform: scale(1.75);
 }
 .pic3:hover {
-	transform: scale(1.5);
+	transform: scale(1.75);
 }
 .pic4:hover {
-	transform: scale(1.5);
+	transform: scale(1.75);
 }
 .pic5:hover {
-	transform: scale(1.5);
+	transform: scale(1.75);
 }
 .pic6:hover {
-	transform: scale(1.5);
+	transform: scale(1.75);
 }
 .pic7:hover {
-	transform: scale(1.5);
+	transform: scale(1.75);
 }
 .pic8:hover {
-	transform: scale(1.5);
+	transform: scale(1.75);
 }
 
-/*--- DISABLE THIS AREA FOR LATER DEVELOPMENT lightbox features associated with chicken photo gallery. Bootstrap lightbox features ---*/
-	.card {
+
+
+/*--- DISABLE THIS AREA FOR LATER DEVELOPMENT lightbox features associated with chicken photo gallery. Bootstrap lightbox features 
 		height: 10em;
 	}
 
@@ -106,54 +111,14 @@ a {
 /*--- /.Bootstrap lightbox features ---*/
 
 
+/*--- footer ---*/
 
-
-footer {
-  width: 100%;
-  min-height: 30px;
-  padding: 20px 0 40px 20px;
+.main-footer {
+	margin-top: auto;
+	background-image: radial-gradient(at bottom right, white, transparent 80%),
+	url('../img/egg1.jpg');
+	background-size: cover;
 }
-
-footer .copyright {
-  top: -8px;
-  margin-right: 20px;
-  font-size: .75em;
-}
-
-footer ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-footer ul li {
-  display: inline-block;
-}
-
-/*--- hide social icons 
-
-a.social {
-  display: inline-block;
-  text-indent: -9999px;
-  margin-left: 5px;
-  width: 30px;
-  height: 30px;
-  background-size: 30px 30px;
-  opacity: .5;
-  transition: all .25s;
-}
-a.twitter {
-  background-image: url('../img/twitter.svg');
-}
-a.linkedin {
-  background-image: url('../img/linkedin.svg');
-}
-a.github {
-  background-image: url('../img/github.svg');
-}
-a.social:hover {
-  opacity: 1;
-} ---*/
 
 /*---  /. footer ---*/
 
@@ -163,19 +128,23 @@ a.social:hover {
 
 /*--- treehouse form css ---*/
 
+form {
+	font-family: 'Nunito', sans-serif;
+  	color: #384047;
 
+}
 form {
   max-width: 300px;
   margin: 10px auto;
   padding: 10px 20px;
-  background: #f4f7f8;
+  background: #f7f8f9;
   border-radius: 8px;
+
 }
 
-h5 {
+h1 {
   margin: 0 0 30px 0;
   text-align: center;
-  color:gray;
 }
 
 input[type="text"],
@@ -190,15 +159,15 @@ input[type="time"],
 input[type="url"],
 textarea,
 select {
-  background: rgba(255,255,255,0.1);
+  background: white;
   border: none;
   font-size: 16px;
   height: auto;
   margin: 0;
   outline: 0;
-  padding: 15px;
+  padding: 10px;
   width: 100%;
-  background-color: #e8eeef;
+  background-color: white;
   color: #8a97a0;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
@@ -218,7 +187,7 @@ select {
 button {
   padding: 19px 39px 18px 39px;
   color: #FFF;
-  background-color: #4bc970;
+  background-color: lightgrey;
   font-size: 18px;
   text-align: center;
   font-style: normal;
@@ -251,7 +220,7 @@ label.light {
 }
 
 .number {
-  background-color: #5fcf80;
+  background-color: lightgrey;
   color: #fff;
   height: 30px;
   width: 30px;
@@ -271,14 +240,5 @@ label.light {
   }
 
 }
+
 /*--- /.treehouse form css ---*/
-
-
-/*--- getForm ---*/
-#btn_id:hover,#btn_name:hover,#btn_class:hover,#btn_tag:hover{
-background: linear-gradient(#ffdd7f 5%, #ffffcc 100%);
-}
-#btn_name,#btn_tag{
-margin-left: 10px;
-}
-/*--- getForm ---*/

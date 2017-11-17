@@ -15,6 +15,8 @@
 
 
 
+
+
   </head>
   <body>
       <!-- navbar -->
@@ -50,7 +52,7 @@
           <h1 class="display-4">Michael's Most Amazing Eggs</h1>
           <p class="lead">Yummy Eggs From Happy Hens!</p>
           
-            <button type="button" class="btn btn-outline-secondary btn-lg d-block mx-auto my-2" data-toggle="modal" data-target="#orderForm">Order Michael's Amazing Eggs</button> 
+          <button type="button" class="btn btn-outline-secondary btn-lg d-block mx-auto my-2" data-toggle="modal" data-target="#orderForm">Order Michael's Amazing Eggs</button> 
         </div>
       </div>
       <!-- /.jumbotron -->
@@ -78,18 +80,18 @@
         <hr>
         <h2 id="gallery" class="henHeading display-3 text-center my-5 text-muted">Meet the Happy Hens</h2>
 
-          <ul id="imageGallery">
-            <li class="pic1"><a href="img/flock1.jpg"><img src="img/flock1.jpg" width="200" alt="flock1"></a></li>
-            <li class="pic2"><a href="img/flock2.jpg"><img src="img/flock2.jpg" width="200" alt="flock2"></a></li>
-            <li class="pic3"><a href="img/flock3.jpg"><img src="img/flock3.jpg" width="200" alt="flock3"></a></li>
-            <li class="pic4"><a href="img/flock5.jpg"><img src="img/flock5.jpg" width="200" alt="flock5"></a></li>
-            <li class="pic5"><a href="img/flock6.jpg"><img src="img/flock6.jpg" width="200" alt="flock6"></a></li>
-            <li class="pic6"><a href="img/flock8.jpg"><img src="img/flock8.jpg" width="200" alt="flock8"></a></li>
-            <li class="pic7"><a href="img/jordan-whitt-342861.jpg"><img src="img/jordan-whitt-342861.jpg" width="200" alt="jordan-whitt-342861"></a></li>
-            <li class="pic8"><a href="img/jordan-whitt-342862.jpg"><img src="img/jordan-whitt-342862.jpg" width="200" alt="jordan-whitt-342862"></a></li>
-          </ul>
+        <ul id="imageGallery">
+          <li class="pic1"><a href="img/flock1.jpg"><img src="img/flock1.jpg" width="200" alt="flock1"></a></li>
+          <li class="pic2"><a href="img/flock2.jpg"><img src="img/flock2.jpg" width="200" alt="flock2"></a></li>
+          <li class="pic3"><a href="img/flock3.jpg"><img src="img/flock3.jpg" width="200" alt="flock3"></a></li>
+          <li class="pic4"><a href="img/flock5.jpg"><img src="img/flock5.jpg" width="200" alt="flock5"></a></li>
+          <li class="pic5"><a href="img/flock6.jpg"><img src="img/flock6.jpg" width="200" alt="flock6"></a></li>
+          <li class="pic6"><a href="img/flock8.jpg"><img src="img/flock8.jpg" width="200" alt="flock8"></a></li>
+          <li class="pic7"><a href="img/jordan-whitt-342861.jpg"><img src="img/jordan-whitt-342861.jpg" width="200" alt="jordan-whitt-342861"></a></li>
+          <li class="pic8"><a href="img/jordan-whitt-342862.jpg"><img src="img/jordan-whitt-342862.jpg" width="200" alt="jordan-whitt-342862"></a></li>
+        </ul>
 
-        <!-- suspend bootstrap gallery
+        <!-- DISABLE BOOTSTRAP GALLERY to be developed later hen photo gallery
         <div id="hens" class="row">
           <div class="col-xsm-6 col-md-4 col-xl-3">
             <div class="card bg-dark text-white">
@@ -183,17 +185,17 @@
 
         </div><!-- /.order button -->
         </hr>
-      </div>
-
 
           <form id=form_id action="#" method="post" name="form_name" class="form_class">
-            <h5>Michael's Amazing Eggs</h5>
+            <h4>Michael's Amazing Eggs</h4>
+            <h4>Order Form</h4>
+            <br>
             
             <fieldset>
             <legend>Your Information</legend>
-            <label for="name">Name</label>
+            
             <input type="text" id="name" name="name" placeholder="Name">
-            <label for="email">Email</label>
+            
             <input type="text" id="email" name="email" placeholder="Valid Email">
             </fieldset>
 
@@ -209,18 +211,24 @@
             <input type="radio" id="half dozen" value="6" name="number_ordered">
             <label for="half dozen" class="light">Half Dozen</label>
             <br>
-            <label for="date">When would like your amazing eggs delivered?</label>
+            <label for="date">When would you like your amazing eggs delivered?</label>
             <input type="date" id="pickupDate" name="pickup_Date">
             </fieldset>
             
-            <input type="button" name="submit_id" id="btn_id" value="Order Amazing Eggs" onclick="(function(event){submit_by_id})"/>
+            <input type="button" name="submit_id" id="btn_id" value="Order Michael's Amazing Eggs" onclick="submit()">
 
-            <!-- <button type="submit">Order Eggs</button> -->
+            <!-- <button type="submit>Order Eggs</button> -->
 
           </form>
 
-            <!-- FORM M>ODAL -->
 
+
+      </div>
+
+
+
+
+          <!-- DISABLE THE FORM M>ODAL for later development
 
           <div class="modal fade" id="orderForm" tabindex="-1" role="dialog" aria-labelledby="orderForm" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -256,36 +264,43 @@
                   <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
               </div>
-            </div>
+            </div>-->
           </div>
 
 
 
       <!-- footer -->
+ 
       <hr>
-      <footer>
-        <ul>
-          <li><a href="http://twitter.com/" target="_blank" class="social twitter">Twitter</a></li>
-          <li><a href="#" class="social linkedin">LinkedIn</a></li>
-          <li><a href="#" class="social github">Github</a></li>
-        </ul>
-        <p class="copyright">&copy; Constance Eger</p>
+      <footer class="main-footer">
+        <div class="footer-inner">
+          <span class social>&copy; Constance Eger</span>
+          <br>
+          <br>
+          <br>
+       </div>
       </footer>
         <!-- /.footer -->
     
     
    <!-- Optional JavaScript -->
-      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 
-    <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 
 
 
 
 
+
+
+
+  
 
   </body>
 </html>

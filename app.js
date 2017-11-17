@@ -8,7 +8,7 @@ function validateForm() {
 	}
 } ---*/
 
-// alert("I am an alert box!");
+alert("I am an alert box!");
 
 
 
@@ -16,19 +16,19 @@ function validateForm() {
 
 
 // Submit form with id function.
-function submit_by_id() {
+function (submit()) {
 	var name = document.getElementById("name").value;
 	var email = document.getElementById("email").value;
 
  // Calling validation function
 	if (validation()) {
 	document.getElementById("form_id").submit();
-	alert(" Name : " + name + " \n Email : " + email + " \n Form Id : " + document.getElementById("form_id").getAttribute("id") + "\n\n Thank you for your order. Michael's Amazing Eggs are on the way.");
+	alert(" Name : " + name + " \n Email : " + email + " \n Form Id : " + document.getElementById("form_id").getAttribute("id") + "\n\n Thank you for your order. Yummy eggs are on the way.");
 	}
-}
+};
 
 // Name and Email validation Function.
-function validation(){
+function (validation()){
 	var name = document.getElementById("name").value;
 	var email = document.getElementById("email").value;
 	var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;
@@ -36,16 +36,19 @@ function validation(){
 		alert("Make sure you completed your order form.");
 		return false;
 	}else if(!(email).match(emailReg)){
-		alert("Sorry, please check your email address.");
+		alert("Oops, please check your email address.");
 		return false;
 	}
 	else{
 		return true;
 	}
-}
+};
 
 
 /*--- /.submit order form alert ---*/ 
+
+
+/*--- jQuery lightbox failed, but images loaded ---*/ 
 
 var $overlay = $('<div id="overlay"></div>');
 var $image = $("<img>");
