@@ -12,15 +12,11 @@
 
     <!-- link for css -->
     <link rel="stylesheet" href="css/custom.css">
-
-
-
-
-
   </head>
-  <body>
-      <!-- navbar -->
 
+  <body>
+  
+      <!-- navbar -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="home" data-spy="scroll" data-target=".navbar" data-offset="100">
         <!-- nav container -->
         <div class=container>
@@ -52,7 +48,7 @@
           <h1 class="display-4">Michael's Most Amazing Eggs</h1>
           <p class="lead">Yummy Eggs From Happy Hens!</p>
           
-          <button type="button" class="btn btn-outline-secondary btn-lg d-block mx-auto my-2" data-toggle="modal" data-target="#orderForm">Order Michael's Amazing Eggs</button> 
+          <button type="button" class="btn btn-outline-secondary btn-lg d-block mx-auto my-2" data-toggle="modal" data-target="#form_id">Order Michael's Amazing Eggs</button> 
         </div>
       </div>
       <!-- /.jumbotron -->
@@ -78,7 +74,7 @@
 
           <!-- hens -->
         <hr>
-        <h2 id="gallery" class="henHeading display-3 text-center my-5 text-muted">Meet the Happy Hens</h2>
+        <h2 id="gallery" class="henHeading display-3 d-none d-sm-block text-center my-5 text-muted">Meet the Happy Hens</h2>
 
         <ul id="imageGallery">
           <li class="pic1"><a href="img/flock1.jpg"><img src="img/flock1.jpg" width="200" alt="flock1"></a></li>
@@ -159,10 +155,10 @@
           </div>
         </div> --><!-- /.hens -->
 
-        <!-- order button -->
+        <!-- order button and closing area-->
         <hr>
         <div id="ordernav">
-          <button type="button" class="btn btn-outline-secondary btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#orderForm">Order Michael's Amazing Eggs</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#form_id">Order Michael's Amazing Eggs</button>
 
           <!-- *****DISABLE THIS AREA for later development of egg processing information and newsletter subscription button *******************
 
@@ -182,8 +178,9 @@
             </div>
           </div> ************************************-->
 
-
-        </div><!-- /.order button -->
+        <!-- order form -->
+        </div>
+        
         </hr>
 
           <form id=form_id action="#" method="post" name="form_name" class="form_class">
@@ -214,19 +211,12 @@
             <label for="date">When would you like your amazing eggs delivered?</label>
             <input type="date" id="pickupDate" name="pickup_Date">
             </fieldset>
-            
-            <input type="button" name="submit_id" id="btn_id" value="Order Michael's Amazing Eggs" onclick="submit()">
 
-            <!-- <button type="submit>Order Eggs</button> -->
+            <input type="button" name="submit_id" id="btn_id" value="Order Michael's Amazing Eggs" onclick="submit()"/>
 
           </form>
 
-
-
       </div>
-
-
-
 
           <!-- DISABLE THE FORM M>ODAL for later development
 
@@ -264,13 +254,10 @@
                   <button type="button" class="btn btn-primary">Save changes</button>
                 </div>
               </div>
-            </div>-->
-          </div>
-
-
+            </div>
+          </div>-->
 
       <!-- footer -->
- 
       <hr>
       <footer class="main-footer">
         <div class="footer-inner">
@@ -280,27 +267,16 @@
           <br>
        </div>
       </footer>
-        <!-- /.footer -->
+      <!-- /.footer -->
     
     
-   <!-- Optional JavaScript -->
+    <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="js/app.js" type="text/javascript" charset="utf-8"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-
-
-
-
-
-
-
-
-
-  
 
   </body>
 </html>

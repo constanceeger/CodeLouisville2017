@@ -8,15 +8,16 @@ function validateForm() {
 	}
 } ---*/
 
-alert("I am an alert box!");
 
+window.alert("I am an alert box!");
 
 
 /*--- submit order form alert ---*/ 
 
+document.getElementById("form_id").submit_by_id();
 
 // Submit form with id function.
-function (submit()) {
+function submit_by_id() {
 	var name = document.getElementById("name").value;
 	var email = document.getElementById("email").value;
 
@@ -28,7 +29,7 @@ function (submit()) {
 };
 
 // Name and Email validation Function.
-function (validation()){
+function validation() {
 	var name = document.getElementById("name").value;
 	var email = document.getElementById("email").value;
 	var emailReg = /^([w-.]+@([w-]+.)+[w-]{2,4})?$/;

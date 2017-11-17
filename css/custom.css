@@ -19,7 +19,7 @@
 
 
 
-/*jQueary lightbox */
+/*--- jQueary lightbox. lightbox failed buy images loaded ---*/
 
 ul {
 	list-style:none;
@@ -62,7 +62,7 @@ a {
 	color:white;
 }
 
-/*--- /.JQuery lightbox ---*/
+/*--- /.jQueary lightbox. lightbox failed buy images loaded ---*/
 
 
 
@@ -126,7 +126,7 @@ a {
 
 
 
-/*--- treehouse form css ---*/
+/*--- order form ---*/
 
 form {
 	font-family: 'Nunito', sans-serif;
@@ -137,7 +137,7 @@ form {
   max-width: 300px;
   margin: 10px auto;
   padding: 10px 20px;
-  background: #f7f8f9;
+  background: #f2f3f4;
   border-radius: 8px;
 
 }
@@ -241,4 +241,4 @@ label.light {
 
 }
 
-/*--- /.treehouse form css ---*/
+/*--- /.order form ---*/
